@@ -1,0 +1,117 @@
+@media only screen and (max-width: 991px) {
+    .offset-2 {
+        margin-left: 0;
+    }
+    form {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-content button {
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .home-banner {
+        position: relative;
+        margin-bottom: 65px;
+    }
+    #button-top {
+        bottom: 50px;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h2 {
+        margin-bottom: 25px;
+        line-height: 30px;
+    }
+
+    .logo {
+        width: 175px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .tagline {
+        font-size: 20px;
+    }
+
+    .home-banner .container {
+        padding: 40px 15px 75px;
+    }
+
+    .transplant-right {
+        margin-top: 50px;
+    }
+
+    .transplant-right div:first-child,
+    .transplant-right div {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .transplant-right div {
+        padding: 25px 5px;
+    }
+
+    section {
+        margin: 40px 0;
+    }
+
+    .doctors-main h3 {
+        font-size: 16px;
+        padding: 20px 0px 0px;
+    }
+
+    .doctor-card {
+        padding: 20px 20px;
+    }
+    .doctor-details li,
+    .doctor-info p {
+        font-size: 12px;
+    }
+
+    .doctor-info {
+        margin: 20px 0;
+    }
+
+    .doctor-card button {
+        font-size: 13px;
+        padding: 10px 35px;
+    }
+
+    .transplant-types li {
+        margin: 30px 30px;
+    }
+
+    .accordion-item h2 button {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .accordion-body ul li {
+        line-height: 22px;
+        margin: 0 5px;
+    }
+
+    footer {
+        padding: 25px;
+    }
+
+    section.testimonials p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
+}

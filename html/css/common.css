@@ -1,0 +1,626 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "StagSans";
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "StagSans";
+  src: url("./fontS/StagSans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TitilliumSemiBold";
+  src: url("./fonts/TitilliumSemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Titillium";
+  src: url("./fontS/Titillium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "StagSans-Medium";
+  src: url("./fontS/StagSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "StagSansLight";
+  src: url("./fontS/StagSansLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "StagSans-LightItalic";
+  src: url("./fontS/StagSans-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "StagSans-Medium";
+  src: url("./fontS/StagSans-Medium.ttf") format("truetype");
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: "StagSans-Medium";
+  font-size: 31px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  color: #22b78e;
+  letter-spacing: 1.28px;
+  line-height: 44px;
+}
+
+figure {
+  margin: 0;
+}
+
+section {
+  margin: 75px 0;
+}
+
+.copyrigth p,.tagline,.testimonials-card-top ul li:nth-last-child(1),.doctor-info p,.doctor-details li,.transplant-right div   {
+  font-family: "StagSansLight";
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.global-effect {
+  position: relative;
+  z-index: 22;
+}
+
+.global-effect:hover:before {
+  width: 0;
+  background: #ffffff;
+}
+
+.global-effect:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.6s ease-out !important;
+  z-index: -1;
+}
+
+/*---------------------home-styles----------------*/
+
+.logo {
+  width: 239px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.home-banner {
+  background: url(../images/Banner-img.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.home-banner .container {
+  padding: 40px 0;
+}
+
+.banner-content h2,
+.tagline {
+  color: #fff;
+}
+
+.banner-content h2 {
+  font-family: "Titillium";
+  margin: 0;
+  letter-spacing: 1.28px;
+  line-height: 40px;
+}
+
+.tagline {
+  font-size: 25px;
+  letter-spacing: 3.59px;
+  line-height: 34px;
+  margin: 15px 0;
+}
+
+form {
+  position: relative;
+  background: #fff;
+  padding: 30px;
+  box-shadow: -4px 2px 13px 0 rgb(85 95 126 / 18%);
+  width: 339px;
+  height: 492px;
+}
+
+.captcha-img {
+  position: absolute;
+  width: 50px;
+  right: 45px;
+  margin-top: -25px;
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 0.25em;
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+}
+
+form h3 {
+  color: #213559;
+  font-size: 20.08px;
+  line-height: 24px;
+}
+
+.banner-content button {
+  background-color: #dd5a6a;
+  border-radius: 3.2px;
+  width: 186px;
+  height: 45px;
+  color: #fff;
+  border: none;
+}
+
+input.form-control,
+textarea,
+.form-check {
+  color: #213559;
+  font-size: 12.22px;
+  line-height: 15px;
+  border: 0.87px solid #d0d0d0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.form-check {
+  height: 77px;
+  display: flex;
+  align-items: center;
+  padding: 0px 45px;
+}
+
+input.form-control {
+  height: 42px;
+}
+
+textarea {
+  height: 72px;
+  padding: 20px;
+}
+
+label.form-check-label {
+  color: #213559;
+  font-size: 12.22px;
+  line-height: 15px;
+}
+
+.submit {
+  background-color: #dd5a6a;
+  width: 111px;
+  height: 44px;
+  border: none;
+  color: #fff;
+}
+
+/*---------------------second-block----------------*/
+
+.transplant-right div:first-child {
+  background-image: radial-gradient(#2ec4b8 10%, #6078ea 100%);
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+.transplant-right div {
+  padding: 35px 0;
+  color: #000000;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.transplant-right div:nth-child(2),
+.transplant-right div:nth-child(3) {
+  border-bottom: 1px solid #ececff;
+}
+
+/*---------------------doctors-block----------------*/
+
+.doctor-card {
+  position: relative;
+  background: #f9f9ff;
+  padding: 25px 25px;
+  border-radius: 4px;
+}
+
+.doctor-card:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 85%;
+  background: #ececff;
+  bottom: 0px;
+  left: 35px;
+}
+
+.doctors-main h3 {
+  color: #22b78e;
+  font-size: 24px;
+  letter-spacing: 0.99px;
+  font-family: "StagSans-Medium";
+  text-align: center;
+  padding: 30px 0px 5px;
+  background: #f9f9ff;
+  margin: 0;
+}
+
+.doctor-card img {
+  width: auto;
+}
+
+.doctor-card figure {
+  text-align: center;
+}
+
+.doctor-details h3 {
+  color: #1d5aa6;
+  margin: 0px 0 10px;
+}
+
+.doctor-details li {
+  color: #1d5aa6;
+  font-family: StagSans;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+
+.doctor-info {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.doctor-card button {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 18px;
+  font-family: "StagSans-Medium";
+  background-image: radial-gradient(35.15% 100%, #17ead9 0%, #6078ea 100%);
+  border: none;
+  color: #fff;
+  padding: 14px 25px;
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+  border-radius: 4px;
+}
+
+.doctors-left-block .col-md-12:nth-last-child(1) .doctor-card:after,
+.doctors-right-block .col-md-12:nth-last-child(1) .doctor-card:after {
+  content: none;
+}
+
+/*---------------------Types-transplant----------------*/
+
+.transplant-types ul {
+  position: relative;
+}
+
+.transplant-types li:before {
+  content: "";
+  background: url(../images/icon-plus.png) no-repeat;
+  height: 16px;
+  margin-top: 5px;
+  width: 16px;
+  left: 0;
+  position: absolute;
+}
+
+.transplant-types li {
+  margin: 30px 50px;
+  transition: 0.5s;
+}
+
+.transplant-types li:hover:before {
+  left: 30px;
+  transition: 0.5s;
+}
+
+/*---------------------warning-signs----------------*/
+
+.signs-card img {
+  width: 30px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.signs-card {
+  position: relative;
+  border: 1px solid #e5eaff;
+  border-radius: 4px;
+  box-shadow: 3px 5px 29px 0 rgb(187 165 228 / 10%);
+  padding: 30px 20px;
+  height: 100%;
+}
+
+.signs-card p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 21px;
+}
+
+.warning-signs .col-md-3 {
+  margin-bottom: 40px;
+}
+
+.signs-card:before {
+  background: #1d5aa6;
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  z-index: -1;
+}
+
+.signs-card:hover:before {
+  width: 100%;
+  transition: all 0.8s ease 0s;
+}
+
+.signs-card:hover {
+  color: #fff;
+}
+
+/*---------------------accordions-styles----------------*/
+
+.accordion-item h2 button {
+  color: #1d5aa6;
+  font-size: 20px;
+  letter-spacing: 1.6px;
+  line-height: 22px;
+  font-weight: 600;
+  padding: 30px 0;
+  border-bottom: 1px solid #ececff !important;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #1d5aa6;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+section.accordions h2 {
+  margin: 0;
+  border-bottom: 1px solid #ececff !important;
+}
+
+.accordion-button::after {
+  background: url(../images/down-icon.png) no-repeat;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url(../images/down-icon.png) no-repeat;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-body ul li:before {
+  content: "";
+  background: url(../images/tick-iocn.png) no-repeat;
+  position: absolute;
+  height: 8px;
+  width: 14px;
+  left: 0;
+  margin-top: 12px;
+}
+
+.accordion-body ul li {
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0 25px;
+}
+
+.accordion-body {
+  position: relative;
+}
+
+/*---------------------testimonials-styles----------------*/
+
+.testimonials-card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 9px 8px 27px 0 rgb(0 0 0 / 4%);
+  margin: 15px;
+  padding: 40px;
+}
+
+.testimonials-card-top img {
+  width: 60px !important;
+  display: initial !important;
+  float: left;
+  margin-right: 20px;
+}
+
+.testimonials-card-top ul li:first-child {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.testimonials-card-top ul li:nth-last-child(1) {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.testimonials-card-bottom p {
+  font-family: "StagSans-LightItalic";
+  font-size: 15px;
+}
+
+.testimonials-card-top {
+  margin-bottom: 38px;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+
+.testi-bg img {
+  width: 70px !important;
+}
+
+.testi-bg {
+  position: absolute;
+  top: 40px;
+  right: 70px;
+}
+
+section.testimonials p {
+  width: 50%;
+}
+
+/*----------------------apoint-btn------------------*/
+
+.book-appointment-main {
+  text-align: center;
+  margin: 0px 0 75px;
+}
+
+.book-appointment-main button {
+  background: #004498;
+  border: none;
+  color: #fff;
+  font-size: 17.14px;
+  line-height: 21px;
+  border-radius: 3.81px;
+  padding: 15px 50px;
+}
+
+/*--------------------footer-styles------------------*/
+
+footer {
+  background: #272727;
+  padding: 50px;
+  height: 250px;
+}
+
+.social-icons img {
+  width: 25px;
+}
+
+.social-icons ul li {
+  display: inline-block;
+  transition: 0.5s;
+  padding: 8px;
+}
+
+.social-icons ul li:hover {
+  padding: 8px;
+  border: 1px solid #004498;
+  border-radius: 50px;
+  background: white;
+}
+
+.social-icons {
+  text-align: center;
+  padding: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyrigth p {
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1.12px;
+  line-height: 17px;
+}
+
+/*------------------move-top-----------------*/
+
+#button-top {
+  opacity: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 75px;
+  right: 75px;
+  transition: all 0.5s;
+  z-index: 99;
+  cursor: pointer;
+}
+
+#button-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#button-top:hover {
+  transform: translateY(-10px);
+}
+
+#button-top::before {
+  content: "";
+  position: absolute;
+  background: url(../images/top-icon.png) no-repeat;
+  width: 40px;
+  height: 40px;
+}
